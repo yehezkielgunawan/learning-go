@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	// Nambahin komentar
-	var firstName string = "john"
-	lastName := "wick"
-	lastName = "ethan"
+	const firstName string = "john"
+	const lastName = "wick"
+	// lastName = "ethan"
 
 	_ = "belajar golang"
 
@@ -22,7 +22,35 @@ func main() {
 	 Salam Kenal.
 	 Lagi Belajar Golang jancuk!`
 
+	const (
+		square         = "kotak"
+		isToday  bool  = true
+		numeric  uint8 = 1
+		floatNum       = 2.2
+	)
+
+	// Const with same data and value type
+	const (
+		a = "konstanta"
+		b
+	)
+
+	// today pakai string dengan value senin
+	// sekarang tipe datanya sama dengan today dan nilainya senin
+	// isToday2 dideklarasikan dengan metode type inference dengan tipe data bool dan nilainya true
+	const (
+		today string = "senin"
+		sekarang
+		isToday2 = true
+	)
+
+	// Cara declare multiple const
+	const satu, dua = 1, 2
+	const three, four string = "tiga", "empat"
+
 	fmt.Printf("halo %s %s!\n", firstName, lastName)
+	fmt.Print("Hallo ", firstName)
+	fmt.Print("Nice to meet you ", lastName, "!\n")
 	fmt.Println(name)
 	fmt.Println(*name)
 	fmt.Printf("bilangan positif: %d\n", positiveNumber)
