@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// Nambahin komentar
@@ -60,20 +62,79 @@ func main() {
 	// fmt.Printf("exist? %t \n", exist)
 	// fmt.Println(message)
 
-	var value = (((2+6)%3)*4 - 2) / 3
-	var isEqual = (value == 2)
+	// var value = (((2+6)%3)*4 - 2) / 3
+	// var isEqual = (value == 2)
 
-	var left = false
-	var right = true
+	// var left = false
+	// var right = true
 
-	var leftAndRight = left && right
-	fmt.Printf("left && right \t (%t) \n", leftAndRight)
+	// var leftAndRight = left && right
+	// fmt.Printf("left && right \t (%t) \n", leftAndRight)
 
-	var leftOrRight = left || right
-	fmt.Printf("left || right \t (%t)\n", leftOrRight)
+	// var leftOrRight = left || right
+	// fmt.Printf("left || right \t (%t)\n", leftOrRight)
 
-	var leftReverse = !left
-	fmt.Printf("!left \t\t(%t)\n", leftReverse)
+	// var leftReverse = !left
+	// fmt.Printf("!left \t\t(%t)\n", leftReverse)
 
-	fmt.Printf("nilai %d (%t)", value, isEqual)
+	// fmt.Printf("nilai %d (%t)", value, isEqual)
+
+	// var point = 4
+
+	// if point == 10 {
+	// 	fmt.Println("Lulus sempurna")
+	// } else if point > 5 {
+	// 	fmt.Println("Lulus")
+	// } else if point == 4 {
+	// 	fmt.Println("Hampir lulus")
+	// } else {
+	// 	fmt.Printf("Tidak lulus, nilai anda %d\n", point)
+	// }
+
+	// var point = 8840.0
+
+	// if percent := point / 100; percent >= 100 {
+	// 	fmt.Printf("%.1f%s perfect", percent, "%")
+	// } else if percent >= 70 {
+	// 	fmt.Printf("%.1f%s good\n", percent, "%")
+	// } else {
+	// 	fmt.Printf("%.1f%s bad\n", percent, "%")
+	// }
+
+	// var point = 6
+
+	// switch {
+	// case point == 8:
+	// 	fmt.Println("Perfect")
+	// case point < 8 && point > 3:
+	// 	fmt.Println("Awesome")
+	// 	fallthrough
+	// default:
+	// 	{
+	// 		fmt.Println("Bad")
+	// 		fmt.Println("You can be better!")
+	// 	}
+	// }
+
+	var point = 10
+
+	if point > 7 {
+		switch point {
+		case 10:
+			fmt.Println("Perfect")
+		default:
+			fmt.Println("Nice")
+		}
+	} else {
+		if point == 5 {
+			fmt.Println("Not bad")
+		} else if point == 3 {
+			fmt.Println("Keep trying")
+		} else {
+			fmt.Println("You can do it")
+			if point == 0 {
+				fmt.Println("Gk ketolong")
+			}
+		}
+	}
 }
